@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Golden Crumb Café — artisan coffee, fresh pastries, and handcrafted cakes baked daily." />
+  <title>Golden Crumb Café | Coffee, Pastries & Cakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Golden Crumb Café home">
+        <span class="logo-icon" aria-hidden="true">☕</span>
+        <span class="logo-text">Golden <strong>Crumb</strong></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#menu">Menu</a>
+        <a href="#pastries">Pastries</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#icecreams">Ice Creams</a>
+        <a href="#about">Our Story</a>
+        <a href="#visit">Visit Us</a>
+        <a href="#visit" class="btn btn-sm btn-primary">Order Pickup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Est. 2018 · Baked fresh every morning</p>
+        <h1>Where every sip &amp; bite <em>tells a story</em></h1>
+        <p class="hero-lead">
+          Slow-roasted coffee, buttery croissants, and celebration cakes made with love.
+          Your neighborhood café for slow mornings and sweet afternoons.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#cakes" class="btn btn-ghost">View Cakes</a>
+        </div>
+        <ul class="hero-highlights" aria-label="Café highlights">
+          <li>
+            <span class="highlight-icon">🥐</span>
+            <strong>40+</strong>
+            <span>Fresh pastries daily</span>
+          </li>
+          <li>
+            <span class="highlight-icon">🎂</span>
+            <strong>Custom</strong>
+            <span>Cake orders</span>
+          </li>
+          <li>
+            <span class="highlight-icon">☕</span>
+            <strong>Single-origin</strong>
+            <span>Coffee beans</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="featured-strip" aria-label="Today's specials">
+      <div class="container featured-inner">
+        <article class="featured-card">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop" alt="Fresh croissants on a wooden board" loading="lazy" />
+          <div>
+            <span class="tag">Chef's pick</span>
+            <h3>Almond Croissant</h3>
+            <p>Flaky, caramelized, filled with almond cream</p>
+          </div>
+        </article>
+        <article class="featured-card">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Chocolate layer cake with berries" loading="lazy" />
+          <div>
+            <span class="tag">Weekend special</span>
+            <h3>Velvet Berry Cake</h3>
+            <p>Rich chocolate layers with fresh seasonal berries</p>
+          </div>
+        </article>
+        <article class="featured-card">
+          <img src="https://images.unsplash.com/photo-1495474472283-4d27bc7dd5fa?w=400&h=300&fit=crop" alt="Latte art in a ceramic cup" loading="lazy" />
+          <div>
+            <span class="tag">Signature</span>
+            <h3>Honey Lavender Latte</h3>
+            <p>Local honey, dried lavender, oat milk option</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Sip &amp; savor</p>
+          <h2>Coffee &amp; Drinks</h2>
+          <p class="section-desc">Ethically sourced beans, expertly pulled shots, and seasonal creations.</p>
+        </header>
+
+        <div class="menu-tabs" role="tablist" aria-label="Drink categories">
+          <button class="menu-tab active" role="tab" aria-selected="true" data-tab="coffee">Coffee</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="tea">Tea &amp; More</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="cold">Cold Drinks</button>
+        </div>
+
+        <div class="menu-panels">
+          <div class="menu-panel active" id="panel-coffee" role="tabpanel">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Espresso</h4>
+                  <p>Double shot, rich &amp; bold</p>
+                </div>
+                <span class="menu-price">$3.50</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Cappuccino</h4>
+                  <p>Velvety microfoam, dusted with cocoa</p>
+                </div>
+                <span class="menu-price">$4.75</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Flat White</h4>
+                  <p>Silky steamed milk, ristretto base</p>
+                </div>
+                <span class="menu-price">$4.95</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Honey Lavender Latte <span class="badge">Popular</span></h4>
+                  <p>House-infused lavender syrup &amp; local honey</p>
+                </div>
+                <span class="menu-price">$5.50</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Mocha</h4>
+                  <p>Belgian chocolate, whipped cream</p>
+                </div>
+                <span class="menu-price">$5.25</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Pour Over</h4>
+                  <p>Single-origin rotating selection</p>
+                </div>
+                <span class="menu-price">$4.50</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-tea" role="tabpanel" hidden>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Earl Grey</h4>
+                  <p>Bergamot, served with honey</p>
+                </div>
+                <span class="menu-price">$3.25</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Chamomile Mint</h4>
+                  <p>Calming herbal blend</p>
+                </div>
+                <span class="menu-price">$3.25</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Matcha Latte</h4>
+                  <p>Ceremonial grade, oat or dairy milk</p>
+                </div>
+                <span class="menu-price">$5.00</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Golden Turmeric</h4>
+                  <p>Warming spices, coconut milk</p>
+                </div>
+                <span class="menu-price">$4.75</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Hot Chocolate</h4>
+                  <p>Dark chocolate, marshmallow optional</p>
+                </div>
+                <span class="menu-price">$4.50</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-cold" role="tabpanel" hidden>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Iced Latte</h4>
+                  <p>Double espresso over ice &amp; milk</p>
+                </div>
+                <span class="menu-price">$5.00</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Cold Brew</h4>
+                  <p>18-hour steep, smooth &amp; low-acid</p>
+                </div>
+                <span class="menu-price">$4.75</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Strawberry Lemonade</h4>
+                  <p>House-made, fresh berries</p>
+                </div>
+                <span class="menu-price">$4.25</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Mango Smoothie</h4>
+                  <p>Yogurt, honey, tropical blend</p>
+                </div>
+                <span class="menu-price">$5.50</span>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-info">
+                  <h4>Affogato</h4>
+                  <p>Vanilla gelato drowned in espresso</p>
+                </div>
+                <span class="menu-price">$6.00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pastries-section" id="pastries">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Baked at dawn</p>
+          <h2>Fresh Pastries</h2>
+          <p class="section-desc">European techniques, local ingredients — out of the oven by 7 AM.</p>
+        </header>
+
+        <div class="pastry-grid">
+          <article class="pastry-card">
+            <div class="pastry-image">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&h=400&fit=crop" alt="Butter croissant" loading="lazy" />
+              <span class="pastry-price">$4.50</span>
+            </div>
+            <div class="pastry-body">
+              <h3>Classic Butter Croissant</h3>
+              <p>72 layers of laminated dough, golden and shattering crisp.</p>
+            </div>
+          </article>
+
+          <article class="pastry-card">
+            <div class="pastry-image">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&h=400&fit=crop" alt="Pain au chocolat" loading="lazy" />
+              <span class="pastry-price">$5.25</span>
+            </div>
+            <div class="pastry-body">
+              <h3>Pain au Chocolat</h3>
+              <p>Dark chocolate batons wrapped in flaky pastry.</p>
+            </div>
+          </article>
+
+          <article class="pastry-card">
+            <div class="pastry-image">
+              <img src="https://images.unsplash.com/photo-1608198394988-83faaf3771ac?w=500&h=400&fit=crop" alt="Almond croissant" loading="lazy" />
+              <span class="pastry-price">$5.75</span>
+              <span class="badge badge-float">Best seller</span>
+            </div>
+            <div class="pastry-body">
+              <h3>Almond Croissant</h3>
+              <p>Toasted almonds, frangipane filling, powdered sugar.</p>
+            </div>
+          </article>
+
+          <article class="pastry-card">
+            <div class="pastry-image">
+              <img src="https://images.unsplash.com/photo-1623334044303-2410044d4b8c?w=500&h=400&fit=crop" alt="Cinnamon roll" loading="lazy" />
+              <span class="pastry-price">$4.95</span>
+            </div>
+            <div class="pastry-body">
+              <h3>Cinnamon Roll</h3>
+              <p>Soft swirl, cream cheese glaze, warm spices.</p>
+            </div>
+          </article>
+
+          <article class="pastry-card">
+            <div class="pastry-image">
+              <img src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=500&h=400&fit=crop" alt="Fruit danish" loading="lazy" />
+              <span class="pastry-price">$4.75</span>
+            </div>
+            <div class="pastry-body">
+              <h3>Seasonal Fruit Danish</h3>
+              <p>Cream cheese base topped with fresh seasonal fruit.</p>
+            </div>
+          </article>
+
+          <article class="pastry-card">
+            <div class="pastry-image">
+              <img src="https://images.unsplash.com/photo-1486427944299-d1955d23b34c?w=500&h=400&fit=crop" alt="Macarons" loading="lazy" />
+              <span class="pastry-price">$3.50 ea</span>
+            </div>
+            <div class="pastry-body">
+              <h3>French Macarons</h3>
+              <p>Raspberry, pistachio, salted caramel &amp; vanilla.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cakes-section" id="cakes">
+      <div class="cakes-bg" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-header section-header-light">
+          <p class="eyebrow">Celebrate sweetly</p>
+          <h2>Cakes &amp; Desserts</h2>
+          <p class="section-desc">Whole cakes for every occasion. Order 48 hours ahead for custom designs.</p>
+        </header>
+
+        <div class="cakes-showcase">
+          <div class="cakes-featured">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&h=600&fit=crop" alt="Chocolate celebration cake" loading="lazy" />
+            <div class="cakes-featured-caption">
+              <h3>Velvet Berry Cake</h3>
+              <p>Dark chocolate sponge, mascarpone frosting, fresh berries</p>
+              <span class="cakes-price">From $42 · Serves 8–10</span>
+            </div>
+          </div>
+
+          <ul class="cakes-list">
+            <li class="cake-item">
+              <div>
+                <h4>Classic Victoria Sponge</h4>
+                <p>Vanilla sponge, strawberry jam, whipped cream</p>
+              </div>
+              <span class="menu-price">$38</span>
+            </li>
+            <li class="cake-item">
+              <div>
+                <h4>Red Velvet <span class="badge">Popular</span></h4>
+                <p>Cream cheese frosting, subtle cocoa notes</p>
+              </div>
+              <span class="menu-price">$44</span>
+            </li>
+            <li class="cake-item">
+              <div>
+                <h4>Lemon Drizzle</h4>
+                <p>Zesty lemon curd, elderflower glaze</p>
+              </div>
+              <span class="menu-price">$36</span>
+            </li>
+            <li class="cake-item">
+              <div>
+                <h4>Carrot &amp; Walnut</h4>
+                <p>Spiced layers, maple cream cheese frosting</p>
+              </div>
+              <span class="menu-price">$40</span>
+            </li>
+            <li class="cake-item">
+              <div>
+                <h4>Tiramisu Cake</h4>
+                <p>Espresso-soaked layers, mascarpone, cocoa dust</p>
+              </div>
+              <span class="menu-price">$46</span>
+            </li>
+            <li class="cake-item">
+              <div>
+                <h4>Custom Celebration Cake</h4>
+                <p>Your design, any flavor — weddings, birthdays &amp; more</p>
+              </div>
+              <span class="menu-price">From $65</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cakes-cta">
+          <p>Planning something special? We'd love to bake it for you.</p>
+          <a href="#visit" class="btn btn-light">Request a Custom Cake</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-images">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&h=600&fit=crop" alt="Cozy café interior" class="about-img-main" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1493857671505-7291e71e20b0?w=300&h=300&fit=crop" alt="Barista pouring latte" class="about-img-accent" loading="lazy" />
+        </div>
+        <div class="about-content">
+          <p class="eyebrow">Our story</p>
+          <h2>A little corner of warmth in the heart of the city</h2>
+          <p>
+            Golden Crumb began with a simple dream: a place where the smell of fresh bread
+            greets you at the door and every cup is poured with care. Our head baker, Elena,
+            trained in Paris; our coffee comes from small farms in Colombia and Ethiopia.
+          </p>
+          <p>
+            We believe great food doesn't need to be complicated — just honest ingredients,
+            patience, and a whole lot of butter. Whether you're grabbing a croissant on the
+            run or settling in with a slice of cake, you're family here.
+          </p>
+          <ul class="about-values">
+            <li>
+              <strong>🌱</strong>
+              <span>Locally sourced whenever possible</span>
+            </li>
+            <li>
+              <strong>🧈</strong>
+              <span>European-style laminated pastries</span>
+            </li>
+            <li>
+              <strong>♻️</strong>
+              <span>Compostable cups &amp; packaging</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <p class="eyebrow">Come say hello</p>
+          <h2>Visit Us</h2>
+          <address>
+            <p><strong>Golden Crumb Café</strong></p>
+            <p>42 Maple Street, Downtown</p>
+            <p>Open daily · 7 AM – 8 PM</p>
+            <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+            <p><a href="mailto:hello@goldencrumb.com">hello@goldencrumb.com</a></p>
+          </address>
+
+          <div class="hours-table">
+            <h3>Hours</h3>
+            <dl>
+              <div><dt>Monday – Friday</dt><dd>7:00 AM – 8:00 PM</dd></div>
+              <div><dt>Saturday</dt><dd>8:00 AM – 9:00 PM</dd></div>
+              <div><dt>Sunday</dt><dd>8:00 AM – 6:00 PM</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <form class="order-form" action="#" method="post" onsubmit="return false;">
+          <h3>Pickup Order Request</h3>
+          <p class="form-hint">We'll confirm your order within the hour.</p>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required />
+
+          <label for="order">What would you like?</label>
+          <textarea id="order" name="order" rows="4" placeholder="e.g. 2 almond croissants, 1 honey lavender latte, 1 red velvet cake (pickup Saturday 10 AM)"></textarea>
+
+          <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+          <p class="form-note" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">☕</span>
+        <span>Golden <strong>Crumb</strong></span>
+        <p>Artisan café &amp; bakery since 2018.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#menu">Menu</a>
+        <a href="#pastries">Pastries</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#about">About</a>
+        <a href="#visit">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Golden Crumb Café. Made with butter &amp; love.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
